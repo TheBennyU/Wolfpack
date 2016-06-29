@@ -1,4 +1,5 @@
 ﻿using Xamarin.Forms;
+using System;
 
 namespace Wolfpack
 {
@@ -8,6 +9,12 @@ namespace Wolfpack
 		{
 			InitializeComponent();
 		}
+
+		void OnButtonClicked(object sender, EventArgs args)
+		{
+			Navigation.PushModalAsync(new AddPlayersPage());
+		}
+
 	}
 }
 

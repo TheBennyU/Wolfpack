@@ -8,7 +8,7 @@ namespace Wolfpack
 		{
 			InitializeComponent();
 
-			MainPage = new WolfpackPage();
+			MainPage = new NavigationPage(new WolfpackPage());
 		}
 
 		protected override void OnStart()
