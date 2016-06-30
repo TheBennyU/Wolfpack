@@ -30,6 +30,13 @@ namespace Wolfpack
 			}
 
 		}
+
+		void Handle_Clicked(object sender, System.EventArgs e)
+		{
+			players.Add(new Player { DisplayName = "Joueur" });
+			PlayerView.ItemsSource = players;
+
+		}
 	}
 }
 
