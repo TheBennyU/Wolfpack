@@ -31,11 +31,16 @@ namespace Wolfpack
 
 		}
 
-		void Handle_Clicked(object sender, System.EventArgs e)
+		void btnAddPlayer_Clicked(object sender, System.EventArgs e)
 		{
 			players.Add(new Player { DisplayName = "Joueur" });
 			PlayerView.ItemsSource = players;
 
+		}
+
+		void btnStart_Clicked(object sender, System.EventArgs e)
+		{
+			Navigation.PushModalAsync(new GamePage(players));
 		}
 	}
 }
