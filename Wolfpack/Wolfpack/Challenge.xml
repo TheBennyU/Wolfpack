@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ChallengeList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Challenge>
+		<type>Consequence</type> <!-- Exemple: Game/Rule/Consequence  -->
+		<textDescription>Tout le monde boit 3 gorgées!</textDescription>
+		<who>All</who>  <!-- Exemple: Solo/All/Boys/Girls -->
+		<cancel>0</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Tous les gars boivent 3 gorgées!</textDescription>
+		<who>Boys</who>
+		<cancel>0</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Tous les filles boivent 3 gorgées!</textDescription>
+		<who>Girls</who>
+		<cancel>0</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Joueur doit mettre ses doigts dans son nez</textDescription>
+		<who>Solo</who>
+		<cancel>0</cancel>
+	</Challenge>
+</ChallengeList>
