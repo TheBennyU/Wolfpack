@@ -4,7 +4,7 @@
 		<type>Consequence</type> <!-- Exemple: Game/Rule/Consequence  -->
 		<textDescription>Tout le monde boit 3 gorgées!</textDescription>
 		<who>All</who>  <!-- Exemple: Solo/All/Boys/Girls -->
-		<cancel>0</cancel>
+		<cancel/> <!-- on peut changer pour <cancel/> -->
 	</Challenge>
 	<Challenge>
 		<type>Consequence</type>
@@ -20,7 +20,13 @@
 	</Challenge>
 	<Challenge>
 		<type>Consequence</type>
-		<textDescription>Joueur doit mettre ses doigts dans son nez</textDescription>
+		<textDescription>{0} doit mettre ses doigts dans son nez.</textDescription>
+		<who>Solo</who>
+		21h34
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>À tour de rôle, les joueurs doivent nommer des animes. {0} débute.</textDescription>
 		<who>Solo</who>
 		<cancel>0</cancel>
 	</Challenge>
