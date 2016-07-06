@@ -25,8 +25,7 @@ namespace Wolfpack
 			// Pour loader le fichier XML
 			var assembly = typeof(Challenge).GetTypeInfo().Assembly;
 			Stream stream = assembly.GetManifestResourceStream("Wolfpack.Challenge.xml");
-
-
+			                        
 			using (var reader = new System.IO.StreamReader(stream))
 			{
 				var serializer = new XmlSerializer(typeof(List<Challenge>), new XmlRootAttribute("ChallengeList"));
@@ -70,6 +69,7 @@ namespace Wolfpack
 		private void GenerateChallenge()
 		{
 			Challenge chCurrentChallenge = lstChallenges.RandomChallenge();
+
 			string sText = String.Empty;
 			Color cBackground;
 			Color cText;
@@ -85,7 +85,16 @@ namespace Wolfpack
 			{
 				// Erreur
 			}
-				
+
+
+
+			if (chCurrentChallenge.Cancel.Time != "0")
+			{
+				int numVal = Int32.Parse(chCurrentChallenge.Cancel.Time);
+				DateTime time = DateTime.Now.AddMinutes(numVal);
+				// sText = chCurrentChallenge.Cancel.Text;
+			}
+
 			// On change l'arrière plan selon le type de challenge
 			switch (chCurrentChallenge.Type)
 			{
@@ -115,6 +124,15 @@ namespace Wolfpack
 		}
 	}
 
+	[XmlRoot(ElementName = "cancel")]
+	public class Cancel
+	{
+		[XmlElement(ElementName = "time")]
+		public string Time { get; set; }
+		[XmlElement(ElementName = "text")]
+		public string Text { get; set; }
+	}
+
 	[XmlRoot(ElementName = "Challenge")]
 	public class Challenge
 	{
@@ -125,16 +143,15 @@ namespace Wolfpack
 		[XmlElement(ElementName = "who")]
 		public string Who { get; set; }
 		[XmlElement(ElementName = "cancel")]
-		public string Cancel { get; set; }
+		public Cancel Cancel { get; set; }
 	}
 
-
-	// Pas sur que ce soit nécessaire ?
 	[XmlRoot(ElementName = "ChallengeList")]
 	public class ChallengeList
 	{
 		[XmlElement(ElementName = "Challenge")]
 		public List<Challenge> Challenge { get; set; }
 	}
+
 }
 
