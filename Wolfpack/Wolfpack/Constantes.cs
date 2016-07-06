@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.ObjectModel;
+
 namespace Wolfpack
 {
 	public class Constantes

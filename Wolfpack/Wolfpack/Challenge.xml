@@ -33,7 +33,7 @@
 		<who>Solo</who>
 		<cancel>
 			<time>3</time>
-			<text>heheh</text>
+			<text>{0} peut enfin enlever les doigts de son nez.</text>
 		</cancel>
 	</Challenge>
 	<Challenge>
@@ -47,11 +47,299 @@
 	</Challenge>
 	<Challenge>
 		<type>Consequence</type>
-		<textDescription>Fuck {0}</textDescription>
+		<textDescription>Fuck {0}! {0} boit 4!</textDescription>
 		<who>Solo</who>
 		<cancel>
 			<time>0</time>
 			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>Grimace! La dernière personne à sortir la langue boit 5!</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Si tu es roux, fini ton verre!</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Si tu es en couple depuis plus d'un an, boit 3!</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Si tu es en couple depuis plus d'un an, boit 3!</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>{0} donne 5!</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>{0} donne 6!</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>{0} donne 7!</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>{0} donne 8!</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>{0} donne 9!</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>{0} donne 10!</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>La personne avec le verre le plus plein doit le caller!</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>Decidez qui est le plus wolf dans la pièce, il doit boire 4!</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>À partir de maintenant, {0} doit garder 2 doigts dans sa bouche!</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>5</time>
+			<text>{0} peut maintenant enlever les doigts de sa bouche</text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>À tour de rôle, les joueurs doivent nommer marques d'automobiles. {0} débute.</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>À tour de rôle, les joueurs doivent nommer marques de bières. {0} débute.</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Rule</type>
+		<textDescription>Nouvelle règle! Comme Yoda, vous devez parler</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>10</time>
+			<text>Vous pouvez arrêter de parler comme Yoda!</text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Rule</type>
+		<textDescription>Vous devez maintenant utiliser un sacre dans chacune de vos osti de phrases!</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>10</time>
+			<text>TABARNAK! Vous pouvez arrêter de sacrer!</text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Si tu mesures plus de 6 pieds, donne 4!</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Si tu bois du fort, bois 3</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Si tu est célibataire, donne 2</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>Dernière personne à finir son verre est une tapette! Il doit prendre un shot de plus</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Rule</type>
+		<textDescription>Vous ne pouvez plus regarder la personne à qui vous parlez dans les yeux</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>4</time>
+			<text>Vous pouvez maintenant regarder tout le monde dans les yeux</text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Gerry boit 5 s'il vous plait</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Le plus jeune joueur doit boire 3</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Les ingénieurs boivent 3! Les autres boivent 1!</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Si ta fête est une date paire, bois 3.</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>Le premier à aller au toilette, doit boire 5 lors de son retour!</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Si tu a la lettre 'A' dans ton nom, bois 2.</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Si tu pèse moins de 190, bois 4.</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Si tu as les yeux bleux, bois 2.</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>Décidé qui est le plus intelligent, cette personne doit boire 3</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Rule</type>
+		<textDescription>Il est maintenant interdit de dire le mot 'boire'. Buvez 2 si vous le dite!</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>10</time>
+			<text>Vous pouvez maintenant dire le mot 'boire'.</text>
 		</cancel>
 	</Challenge>
 </ChallengeList>

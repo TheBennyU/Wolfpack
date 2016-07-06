@@ -7,7 +7,7 @@
   <StackLayout>
 	<Label Text="Wolfpack" 
 		   VerticalOptions="CenterAndExpand"
-		   Font="Large"
+		   FontSize="60"
 		   HorizontalOptions="Center" />
 
 	<Label Text="Pour mieux boire." 

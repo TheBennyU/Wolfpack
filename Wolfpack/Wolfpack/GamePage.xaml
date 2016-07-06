@@ -1,13 +1,25 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Wolfpack.GamePage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		     x:Class="Wolfpack.GamePage">
 	<ContentPage.Content>
-		<StackLayout x:Name="slChallenge" Spacing="10">
-			<Label x:Name="Event" Text="Place pour le texte la" 
-			   VerticalOptions="CenterAndExpand"
-			   HorizontalOptions="CenterAndExpand" />
-			<!-- Faudrait faire que ca se fasse en cliquant n'importe ou mais j'ai pas trop
-			check comme l'faire la -->
-			<Button x:Name="btnNext" Text="Next" Clicked="btnNext_Clicked" />
+		
+		<StackLayout x:Name="slChallenge" Spacing="10" Padding="20">
+			
+			<StackLayout.GestureRecognizers>
+		        <TapGestureRecognizer
+		                Tapped="btnNext_Clicked"
+		                NumberOfTapsRequired="1" />
+	  		</StackLayout.GestureRecognizers>
+	  					
+			<Label x:Name="GameEvent" 
+				   Text="Place pour le texte la" 
+			   	   VerticalOptions="CenterAndExpand"
+			       FontSize="50"
+				   FontAttributes="Bold"
+			       LineBreakMode="WordWrap"
+				   HorizontalTextAlignment="Center"/>
+
 			<Button x:Name="btnNewGame" Text="Nouvelle partie" Clicked="btnNewGame_Clicked" IsVisible="false" />
 		</StackLayout>
 	</ContentPage.Content>

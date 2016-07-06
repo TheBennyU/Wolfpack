@@ -9,17 +9,24 @@ public class Player
 	public string DisplayName { get; set; }
 }
 
-
 namespace Wolfpack
 {
 	public partial class AddPlayersPage : ContentPage
 	{
+
 		ObservableCollection<Player> players = new ObservableCollection<Player>();
+
 		public AddPlayersPage()
 		{
 			InitializeComponent();
 			PlayerView.ItemsSource = players;
-			players.Add(new Player { DisplayName = "Test" });
+
+			// S'il n'y a aucun player (en début de partie), on en créé 1
+			if (players.Count == 0)
+			{
+				players.Add(new Player { DisplayName = "Joueur 1" });
+			}
+
 		}
 
 		void OnSelection(object sender, SelectedItemChangedEventArgs e)

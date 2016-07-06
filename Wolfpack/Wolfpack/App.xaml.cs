@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using System.Collections.ObjectModel;
+using Xamarin.Forms;
 
 namespace Wolfpack
 {
@@ -7,7 +8,6 @@ namespace Wolfpack
 		public App()
 		{
 			InitializeComponent();
-
 			MainPage = new NavigationPage(new WolfpackPage());
 		}
 
