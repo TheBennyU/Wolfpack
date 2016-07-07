@@ -333,4 +333,139 @@
 			<text>Vous pouvez maintenant dire le mot 'boire'.</text>
 		</cancel>
 	</Challenge>
+	<Challenge>
+		<type>Rule</type>
+		<textDescription>{0} doit boire en meme temps que {1}</textDescription>
+		<who>Double</who>
+		<cancel>
+			<time>5</time>
+			<text>{0} n'a plus a boire en meme temps que {1}</text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>{0} choisi un mot. En faisant le tour de table, tout le monde doit dire un mot qui rhyme avec ce mot</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Rule</type>
+		<textDescription>{0} doit désormais parler comme Mathias</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>6</time>
+			<text>{0} peut enfin arrêter de parler comme Mathias</text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Rule</type>
+		<textDescription>{0} est désormais dépressif.</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>6</time>
+			<text>{0} peut enfin arrêter d'être dépressif</text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Tout le monde bois 5 gorgées dans la consommation de son voisin de droites</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text>{0} peut enfin arreter de parler comme Mathias</text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Rule</type>
+		<textDescription>{0} as désormais une opinion sur tout les sujets de conversation et tiens absolument à en faire part au groupe</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>6</time>
+			<text>{0} peut enfin arreter de t'intéresser a tout les sujets</text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Rule</type>
+		<textDescription>Personne n'a le droit de s'adresser a son voisin de gauche.</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>6</time>
+			<text>Vous pouvez enfin vous adresser a votre voisin de gauche</text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Si vous n'avez pas la maladie de crohn, buvez 4 gorgées</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>{0}, lance un vif d'or à la dernière personne qui t'as fait boire</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Rule</type>
+		<textDescription>{0}, invente une règle pour le reste de la partie</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>{0}, choisis ton serviteur parmis les joueurs qui devra désormais te faire boire tes gorgées et t'appeller maître</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>7</time>
+			<text>{0}, ton serviteur est enfin affranchie</text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>{0} et {1}, 3 de 5 de roche, papier, ciseaux le perdant boit 5 gorgées</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>{0}, nomme les 13 provinces du Canada ou renie ton pays et finit ton verre</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Au prochain quart d'heure (00-15-30-45), tout le monde doit boire 2 gorgées.</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>{0}, choisis ton adversaire (mano to mano) du jeux de doigt le perdant boit 3 gorgées</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
 </ChallengeList>
