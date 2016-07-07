@@ -2,8 +2,8 @@
 <ChallengeList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<Challenge>
 		<type>Consequence</type> <!-- Exemple: Game/Rule/Consequence  -->
-		<textDescription>Tout le monde boit 3 gorgées!</textDescription>
-		<who>All</who>  <!-- Exemple: Solo/All/Boys/Girls -->
+		<textDescription>Tout le monde boit 3 gorgées</textDescription>
+		<who>All</who>  <!-- Exemple: Solo/All/Boys/Girls/Double -->
 		<cancel>
 			<time>0</time>
 			<text></text>
@@ -11,7 +11,7 @@
 	</Challenge>
 	<Challenge>
 		<type>Consequence</type>
-		<textDescription>Tous les gars boivent 3 gorgées!</textDescription>
+		<textDescription>Tous les gars boivent 3 gorgées</textDescription>
 		<who>Boys</who>
 		<cancel>
 			<time>0</time>
@@ -20,7 +20,7 @@
 	</Challenge>
 	<Challenge>
 		<type>Consequence</type>
-		<textDescription>Tous les filles boivent 3 gorgées!</textDescription>
+		<textDescription>Tous les filles boivent 3 gorgées</textDescription>
 		<who>Girls</who>
 		<cancel>
 			<time>0</time>
@@ -29,11 +29,11 @@
 	</Challenge>
 	<Challenge>
 		<type>Consequence</type>
-		<textDescription>{0} doit mettre ses doigts dans son nez.</textDescription>
+		<textDescription>{0} doit mettre ses doigts dans son nez</textDescription>
 		<who>Solo</who>
 		<cancel>
 			<time>3</time>
-			<text>{0} peut enfin enlever les doigts de son nez.</text>
+			<text>{0} peut enfin enlever les doigts de son nez</text>
 		</cancel>
 	</Challenge>
 	<Challenge>
@@ -146,7 +146,7 @@
 	</Challenge>
 	<Challenge>
 		<type>Consequence</type>
-		<textDescription>La personne avec le verre le plus plein doit le caller!</textDescription>
+		<textDescription>La personne avec le verre le plus plein doit le caller maintenant!</textDescription>
 		<who>All</who>
 		<cancel>
 			<time>0</time>
@@ -163,17 +163,8 @@
 		</cancel>
 	</Challenge>
 	<Challenge>
-		<type>Consequence</type>
-		<textDescription>À partir de maintenant, {0} doit garder 2 doigts dans sa bouche!</textDescription>
-		<who>Solo</who>
-		<cancel>
-			<time>5</time>
-			<text>{0} peut maintenant enlever les doigts de sa bouche</text>
-		</cancel>
-	</Challenge>
-	<Challenge>
 		<type>Game</type>
-		<textDescription>À tour de rôle, les joueurs doivent nommer marques d'automobiles. {0} débute.</textDescription>
+		<textDescription>À tour de rôle, les joueurs doivent nommer une marque d'automobiles. {0} débute.</textDescription>
 		<who>Solo</who>
 		<cancel>
 			<time>0</time>
@@ -191,7 +182,7 @@
 	</Challenge>
 	<Challenge>
 		<type>Rule</type>
-		<textDescription>Nouvelle règle! Comme Yoda, vous devez parler</textDescription>
+		<textDescription>Nouvelle règle! Comme Yoda, vous devez parler.</textDescription>
 		<who>All</who>
 		<cancel>
 			<time>10</time>
@@ -204,7 +195,7 @@
 		<who>All</who>
 		<cancel>
 			<time>10</time>
-			<text>TABARNAK! Vous pouvez arrêter de sacrer!</text>
+			<text>TABARNAK! Vous pouvez arrêter de sacrer.</text>
 		</cancel>
 	</Challenge>
 	<Challenge>
@@ -218,7 +209,7 @@
 	</Challenge>
 	<Challenge>
 		<type>Consequence</type>
-		<textDescription>Si tu bois du fort, bois 3</textDescription>
+		<textDescription>Si tu bois du fort, bois 3.</textDescription>
 		<who>All</who>
 		<cancel>
 			<time>0</time>
@@ -227,7 +218,7 @@
 	</Challenge>
 	<Challenge>
 		<type>Consequence</type>
-		<textDescription>Si tu est célibataire, donne 2</textDescription>
+		<textDescription>Si tu est célibataire, donne 2.</textDescription>
 		<who>All</who>
 		<cancel>
 			<time>0</time>
@@ -236,7 +227,7 @@
 	</Challenge>
 	<Challenge>
 		<type>Game</type>
-		<textDescription>Dernière personne à finir son verre est une tapette! Il doit prendre un shot de plus</textDescription>
+		<textDescription>La personne avec le verre le plus vide doit le terminer.</textDescription>
 		<who>All</who>
 		<cancel>
 			<time>0</time>
@@ -245,16 +236,16 @@
 	</Challenge>
 	<Challenge>
 		<type>Rule</type>
-		<textDescription>Vous ne pouvez plus regarder la personne à qui vous parlez dans les yeux</textDescription>
+		<textDescription>Vous ne pouvez plus regarder la personne à qui vous parlez dans les yeux.</textDescription>
 		<who>All</who>
 		<cancel>
 			<time>4</time>
-			<text>Vous pouvez maintenant regarder tout le monde dans les yeux</text>
+			<text>Vous pouvez maintenant regarder tout le monde dans les yeux.</text>
 		</cancel>
 	</Challenge>
 	<Challenge>
 		<type>Consequence</type>
-		<textDescription>Gerry boit 5 s'il vous plait</textDescription>
+		<textDescription>Gerry boit 5 s'il vous plait.</textDescription>
 		<who>All</who>
 		<cancel>
 			<time>0</time>
@@ -263,7 +254,7 @@
 	</Challenge>
 	<Challenge>
 		<type>Consequence</type>
-		<textDescription>Le plus jeune joueur doit boire 3</textDescription>
+		<textDescription>Le plus jeune joueur doit boire 3.</textDescription>
 		<who>All</who>
 		<cancel>
 			<time>0</time>
@@ -272,7 +263,7 @@
 	</Challenge>
 	<Challenge>
 		<type>Consequence</type>
-		<textDescription>Les ingénieurs boivent 3! Les autres boivent 1!</textDescription>
+		<textDescription>Les ingénieurs boivent 3 et les autres boivent 1.</textDescription>
 		<who>All</who>
 		<cancel>
 			<time>0</time>
@@ -308,7 +299,7 @@
 	</Challenge>
 	<Challenge>
 		<type>Consequence</type>
-		<textDescription>Si tu pèse moins de 190, bois 4.</textDescription>
+		<textDescription>Si tu pèses moins de 190lb, bois 4.</textDescription>
 		<who>All</who>
 		<cancel>
 			<time>0</time>
@@ -326,7 +317,7 @@
 	</Challenge>
 	<Challenge>
 		<type>Game</type>
-		<textDescription>Décidé qui est le plus intelligent, cette personne doit boire 3</textDescription>
+		<textDescription>Décidez qui est le plus intelligent, cette personne doit boire 3.</textDescription>
 		<who>All</who>
 		<cancel>
 			<time>0</time>

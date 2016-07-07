@@ -15,6 +15,10 @@ namespace Wolfpack
 		public const string WHO_GIRLS = "Girls";
 		public const string WHO_BOYS = "Boys";
 		public const string WHO_SOLO = "Solo";
+		public const string WHO_DOUBLE = "Double";
+
+		// Nombre de challenge dans une partie
+		public const int GAME_LENGTH = 3;
 	}
 }
 
