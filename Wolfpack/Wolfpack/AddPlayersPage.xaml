@@ -22,7 +22,7 @@
 							<ViewCell>
 								<StackLayout Orientation="Horizontal" Padding="10,0,10,0">
 									<Entry HorizontalOptions="FillAndExpand" BackgroundColor="#373D4B" FontSize="20" TextColor="White" Text="{Binding DisplayName}" />
-									<Button x:Name="{Binding DisplayName}" Text="X" FontSize="20" TextColor="White" Clicked="Delete_Clicked" />
+									<Button CommandParameter="{Binding DisplayName}" Text="X" FontSize="20" TextColor="White" Clicked="Delete_Clicked" BackgroundColor="#373D4B"/>
 								</StackLayout>
 							</ViewCell>
 			          </DataTemplate>
@@ -31,10 +31,18 @@
 	  		</ScrollView>
 			<!--<Button x:Name="btnAddPlayer" FontAttributes="Bold" TextColor="#FFA240" Text="Ajouter un joueur" Clicked="btnAddPlayer_Clicked" />-->
 			<ContentView BackgroundColor="#00B19D" Padding="15" Margin="20,20,20,0">
-				<Button x:Name="btnAddPlayer"  FontSize="24" FontAttributes="Bold" TextColor="White" Text="Ajouter un joueur" Clicked="btnAddPlayer_Clicked" />
+				<ContentView.GestureRecognizers>
+			        <TapGestureRecognizer Tapped="btnAddPlayer_Clicked" NumberOfTapsRequired="1" />
+		  		</ContentView.GestureRecognizers>
+				<Label TextColor="White" FontSize="24" FontAttributes="Bold" Text="Ajouter un joueur" HorizontalOptions="Center" VerticalOptions="Center" />
+			<!--<Button x:Name="btnAddPlayer"  FontSize="24" FontAttributes="Bold" TextColor="White" Text="Ajouter un joueur" Clicked="btnAddPlayer_Clicked" BackgroundColor="#00B19D" />-->
 			</ContentView>
 			<ContentView BackgroundColor="#FFA240" Padding="15" Margin="20,20,20,20">
-				<Button x:Name="btnStart" FontSize="24" FontAttributes="Bold" TextColor="White" Text="Debuter la partie" Clicked="btnStart_Clicked" />
+				<ContentView.GestureRecognizers>
+					<TapGestureRecognizer Tapped="btnStart_Clicked" NumberOfTapsRequired="1" />
+		  		</ContentView.GestureRecognizers>
+				<Label TextColor="White" FontSize="24" FontAttributes="Bold" Text="Débuter la partie" HorizontalOptions="Center" VerticalOptions="Center" />
+			<!--<Button x:Name="btnStart" FontSize="24" FontAttributes="Bold" TextColor="White" Text="Debuter la partie" Clicked="btnStart_Clicked" BackgroundColor="#FFA240" />-->
 			</ContentView>
 		</StackLayout>
 	</ContentPage.Content>

@@ -21,7 +21,11 @@
 				   HorizontalTextAlignment="Center"/>
 
 			<ContentView x:Name="cvNewGame" BackgroundColor="#E84855" Padding="15" Margin="20,20,20,20" IsVisible="false" >
-				<Button x:Name="btnNewGame" FontSize="24" FontAttributes="Bold" TextColor="White" Text="Nouvelle partie" Clicked="btnNewGame_Clicked" />
+				<ContentView.GestureRecognizers>
+						<TapGestureRecognizer Tapped="btnNewGame_Clicked" NumberOfTapsRequired="1" />
+	  			</ContentView.GestureRecognizers>
+				<Label TextColor="White" FontSize="24" FontAttributes="Bold" Text="Nouvelle partie" HorizontalOptions="Center" VerticalOptions="Center" />
+				<!--<Button x:Name="btnNewGame" FontSize="24" FontAttributes="Bold" TextColor="White" Text="Nouvelle partie" Clicked="btnNewGame_Clicked" />-->
 			</ContentView>
 		</StackLayout>
 	</ContentPage.Content>
