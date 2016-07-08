@@ -10,7 +10,6 @@
 						BackgroundColor="#373D4B"
 						SeparatorVisibility="Default" 
 						Footer=""
-						RowHeight="30"
 						HorizontalOptions="CenterAndExpand">
 					
 					<!--<ListView.Header>

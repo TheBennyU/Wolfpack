@@ -49,12 +49,10 @@ namespace Wolfpack
 		{
 			string playerName = String.Format("Joueur {0}", players.Count + 1);
 			players.Add(new Player { DisplayName = playerName });
-			PlayerView.ItemsSource = players;
 		}
 
 		void Delete_Clicked(object sender, System.EventArgs e)
 		{
-			
 			var item = (Xamarin.Forms.Button)sender;
 		}
 
