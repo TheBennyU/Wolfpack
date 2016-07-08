@@ -72,9 +72,8 @@ namespace Wolfpack
 		void btnNewGame_Clicked(object sender, EventArgs e)
 		{
 			 btnNewGame.IsVisible = false;
-			 StartGame();
-
-			// Navigation.PushModalAsync(new AddPlayersPage());
+			 //StartGame();
+			Navigation.PushModalAsync(new AddPlayersPage(players));
 
 		}
 
