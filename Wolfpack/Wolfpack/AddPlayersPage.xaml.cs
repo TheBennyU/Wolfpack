@@ -29,6 +29,13 @@ namespace Wolfpack
 
 		}
 
+		public AddPlayersPage(ObservableCollection<Player> ocPlayer)
+		{
+			InitializeComponent();
+			players = ocPlayer;
+			PlayerView.ItemsSource = players;
+		}
+
 		void OnSelection(object sender, SelectedItemChangedEventArgs e)
 		{
 			if (e.SelectedItem == null)
@@ -43,6 +50,12 @@ namespace Wolfpack
 			players.Add(new Player { DisplayName = "Joueur" });
 			PlayerView.ItemsSource = players;
 
+		}
+
+		void Delete_Clicked(object sender, System.EventArgs e)
+		{
+			
+			var item = (Xamarin.Forms.Button)sender;
 		}
 
 		void btnStart_Clicked(object sender, System.EventArgs e)

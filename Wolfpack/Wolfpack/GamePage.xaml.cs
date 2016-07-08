@@ -13,7 +13,7 @@ namespace Wolfpack
 	{
 		ObservableCollection<Player> players;
 		List<Challenge> lstChallenges;
-		static List<Tuple<Challenge, DateTime, string>> lstCancel = new List<Tuple<Challenge, DateTime, string>>();
+		List<Tuple<Challenge, DateTime, string>> lstCancel;
 
 		/// <summary>
 		/// Permet d'afficher la page et d'obtenir une liste de challenges
@@ -23,6 +23,7 @@ namespace Wolfpack
 		{
 			InitializeComponent();
 			players = inPlayers;
+			lstCancel = new List<Tuple<Challenge, DateTime, string>>();
 			StartGame();
 		}
 
@@ -66,7 +67,7 @@ namespace Wolfpack
 		void btnNewGame_Clicked(object sender, EventArgs e)
 		{
 			 btnNewGame.IsVisible = false;
-			 StartGame();
+			 Navigation.PushModalAsync(new AddPlayersPage(players));
 
 			// Navigation.PushModalAsync(new AddPlayersPage());
 

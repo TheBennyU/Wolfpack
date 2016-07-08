@@ -1,29 +1,42 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Wolfpack.AddPlayersPage">
 	<ContentPage.Content>
-		<StackLayout Padding="20">
-			<ListView x:Name="PlayerView"
-					SeparatorVisibility="Default" 
-					Footer=""
-					RowHeight="30">
-				
-			<ListView.Header>
-	           <Label Text="Noms des joueurs" 
-					  Font="Large"
-			          HorizontalOptions="Center" />
-	        </ListView.Header>
-				
-		    <ListView.ItemTemplate>
-	          <DataTemplate>
-	            <EntryCell Placeholder="Joueur" Text="{Binding DisplayName}" />
-	          </DataTemplate>
-	        </ListView.ItemTemplate>
-
-
-	  		</ListView>
-
-			<Button x:Name="btnAddPlayer" Text="Ajouter un joueur" Clicked="btnAddPlayer_Clicked" />
-			<Button x:Name="btnStart" Text="Débuter la partie" Clicked="btnStart_Clicked" />
+		<StackLayout BackgroundColor="#373D4B" Spacing="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+			<ContentView Padding="20" HorizontalOptions="FillAndExpand">
+				<Label TextColor="White" FontSize="24" FontAttributes="Bold" Text="Noms des joueurs" HorizontalOptions="Center" />
+			</ContentView>
+			<ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+				<ListView x:Name="PlayerView"
+						BackgroundColor="#373D4B"
+						SeparatorVisibility="Default" 
+						Footer=""
+						RowHeight="30"
+						HorizontalOptions="CenterAndExpand">
+					
+					<!--<ListView.Header>
+			           <Label Text="Noms des joueurs" 
+							  Font="Large" />
+			        </ListView.Header>-->
+						
+				    <ListView.ItemTemplate>
+			          <DataTemplate>
+							<ViewCell>
+								<StackLayout Orientation="Horizontal" Padding="10,0,10,0">
+									<Entry HorizontalOptions="FillAndExpand" BackgroundColor="#373D4B" FontSize="20" TextColor="White" Text="{Binding DisplayName}" />
+									<Button x:Name="{Binding DisplayName}" Text="X" FontSize="20" TextColor="White" Clicked="Delete_Clicked" />
+								</StackLayout>
+							</ViewCell>
+			          </DataTemplate>
+			        </ListView.ItemTemplate>
+		  		</ListView>
+	  		</ScrollView>
+			<!--<Button x:Name="btnAddPlayer" FontAttributes="Bold" TextColor="#FFA240" Text="Ajouter un joueur" Clicked="btnAddPlayer_Clicked" />-->
+			<ContentView BackgroundColor="#00B19D" Padding="15" Margin="20,20,20,0">
+				<Button x:Name="btnAddPlayer"  FontSize="24" FontAttributes="Bold" TextColor="White" Text="Ajouter un joueur" Clicked="btnAddPlayer_Clicked" />
+			</ContentView>
+			<ContentView BackgroundColor="#FFA240" Padding="15" Margin="20,20,20,20">
+				<Button x:Name="btnStart" FontSize="24" FontAttributes="Bold" TextColor="White" Text="Debuter la partie" Clicked="btnStart_Clicked" />
+			</ContentView>
 		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>
