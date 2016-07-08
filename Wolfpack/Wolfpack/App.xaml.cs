@@ -8,7 +8,8 @@ namespace Wolfpack
 		public App()
 		{
 			InitializeComponent();
-			MainPage = new NavigationPage(new WolfpackPage());
+			MainPage = new ContentPage();
+			MainPage = new AddPlayersPage();
 		}
 
 		protected override void OnStart()
