@@ -112,6 +112,27 @@
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon-App-29x29%401x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon-App-29x29%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon-App-29x29%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon-App-40x40%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon-App-40x40%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Wolfpack-57.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Wolfpack-114.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Wolfpack-120.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Wolfpack-180.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Wolfpack-29.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Wolfpack-58.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Wolfpack-40.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Wolfpack-80.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Wolfpack-50.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Wolfpack-100.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Wolfpack-72.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Wolfpack-144.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Wolfpack-76.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Wolfpack-152.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Wolfpack-167.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Wolfpack-48.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
