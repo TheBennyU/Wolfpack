@@ -47,9 +47,9 @@ namespace Wolfpack
 
 		void btnAddPlayer_Clicked(object sender, System.EventArgs e)
 		{
-			players.Add(new Player { DisplayName = "Joueur" });
+			string playerName = String.Format("Joueur {0}", players.Count + 1);
+			players.Add(new Player { DisplayName = playerName });
 			PlayerView.ItemsSource = players;
-
 		}
 
 		void Delete_Clicked(object sender, System.EventArgs e)

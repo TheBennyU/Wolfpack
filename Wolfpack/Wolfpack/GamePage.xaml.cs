@@ -13,7 +13,8 @@ namespace Wolfpack
 	{
 		ObservableCollection<Player> players;
 		List<Challenge> lstChallenges;
-		List<Tuple<Challenge, DateTime, string>> lstCancel;
+		List<Tuple<Challenge, DateTime, string, string, string>> lstCancel = new List<Tuple<Challenge, DateTime, string, string, string>>();
+		int turnCount = 0;
 
 		/// <summary>
 		/// Permet d'afficher la page et d'obtenir une liste de challenges
@@ -23,13 +24,15 @@ namespace Wolfpack
 		{
 			InitializeComponent();
 			players = inPlayers;
-			lstCancel = new List<Tuple<Challenge, DateTime, string>>();
 			StartGame();
 		}
 
+		/// <summary>
+		/// Permet d'initialiser tout les composants du jeu
+		/// </summary>
 		public void StartGame()
 		{
-			// Pour loader le fichier XML
+			// Pour loader le fichier XML, permet de repartir la partie 
 			var assembly = typeof(Challenge).GetTypeInfo().Assembly;
 			Stream stream = assembly.GetManifestResourceStream("Wolfpack.Challenge.xml");
 
@@ -39,8 +42,10 @@ namespace Wolfpack
 				lstChallenges = (List<Challenge>)serializer.Deserialize(reader);
 			}
 
+			// On vide la liste de challenge à canceller
+			lstCancel.Clear();
+			turnCount = 0;
 			GenerateChallenge();
-
 		}
 
 		/// <summary>
@@ -50,7 +55,7 @@ namespace Wolfpack
 		/// <param name="e">E.</param>
 		void btnNext_Clicked(object sender, EventArgs e)
 		{
-			if (lstChallenges.Count > 0)
+			if (turnCount <= Constantes.GAME_LENGTH && lstChallenges.Count > 0)
 				GenerateChallenge();
 			else
 			{
@@ -67,7 +72,7 @@ namespace Wolfpack
 		void btnNewGame_Clicked(object sender, EventArgs e)
 		{
 			 btnNewGame.IsVisible = false;
-			 Navigation.PushModalAsync(new AddPlayersPage(players));
+			 StartGame();
 
 			// Navigation.PushModalAsync(new AddPlayersPage());
 
@@ -92,63 +97,76 @@ namespace Wolfpack
 			{
 				// Erreur
 			}
+
 			return who;
 		}
 
 
 		/// <summary>
-		/// Permet de générer un challenge
+		/// Permet de générer un challenge. OSTI DE CANCER COMME CODE DÉSOLÉ!
 		/// </summary>
 		/// <returns>The challenge.</returns>
 		private void GenerateChallenge()
 		{
-			bool ahah = true;
+			bool generateNewCh = true;
 			string sText = String.Empty;
 			Color cBackground;
 			Color cText;
-			string tText = String.Empty;
 			string who = "";
+			string who2 = "";
+			string who3 = "";
 			Challenge chCurrentChallenge = new Challenge();
 
-			// on vérifie si un challenge est à canceller
+			// On vérifie si un challenge est à canceller
 			if (lstCancel != null)
 			{
-				foreach (Tuple<Challenge, DateTime, string> tup in lstCancel)
+				foreach (Tuple<Challenge, DateTime, string, string, string> tup in lstCancel)
 				{
 					if (tup.Item2 < DateTime.Now)
 					{
 						chCurrentChallenge = tup.Item1;
-						sText = String.Format(chCurrentChallenge.Cancel.Text, tup.Item3);
-						ahah = false;
+						sText = String.Format(chCurrentChallenge.Cancel.Text, tup.Item3, tup.Item4, tup.Item5);
+						// Puisqu'on cancel un challenge, on ne veut pas en générer un nouveau
+						generateNewCh = false;
 						lstCancel.Remove(tup);
 						break;
 					}
 				}
 			}
 
-			if (ahah)
+			// Si aucun challenge à canceller on veut générer un nouveau challenge
+			if (generateNewCh)
 			{
+				// On génère un nouveau challenge
 				chCurrentChallenge = lstChallenges.RandomChallenge();
 
-				// On ajoute les challenges ayant un temps limite dans la liste
+				// On trouve aléatoirement 3 joueurs différents
+				who = players.RandomPlayer();
+				while (who2 == "" || who2 == who)
+				{
+					who2 = players.RandomPlayer();
+				}
+
+				while (who3 == "" || who3 == who || who3 == who2)
+				{
+					who3 = players.RandomPlayer();
+				}
+
+				// On ajoute les challenges ayant un temps limite dans la liste à vérifier
 				if (chCurrentChallenge.Cancel.Time != "0")
 				{
 					int time = Int32.Parse(chCurrentChallenge.Cancel.Time);
-					who = FindWho(chCurrentChallenge);
-					lstCancel.Add(Tuple.Create(chCurrentChallenge, DateTime.Now.AddMinutes(time), who));
+					lstCancel.Add(Tuple.Create(chCurrentChallenge, DateTime.Now.AddMinutes(time), who, who2, who3));
 				}
-
 
 				// On formate le text du challenge selon la valeur de Who
 				if (chCurrentChallenge.Who == Constantes.WHO_ALL ||
 					chCurrentChallenge.Who == Constantes.WHO_BOYS ||
 					chCurrentChallenge.Who == Constantes.WHO_GIRLS)
 					sText = chCurrentChallenge.TextDescription;
-				else if (chCurrentChallenge.Who == Constantes.WHO_SOLO)
-				{
-					who = players.RandomPlayer();
-					sText = String.Format(chCurrentChallenge.TextDescription, who);
-				}
+				else if (chCurrentChallenge.Who == Constantes.WHO_SOLO || 
+				         chCurrentChallenge.Who == Constantes.WHO_DOUBLE)
+					sText = String.Format(chCurrentChallenge.TextDescription, who, who2, who3);
 				else
 				{
 					// Erreur
@@ -177,10 +195,7 @@ namespace Wolfpack
 					break;
 			}
 
-			if (chCurrentChallenge.Type == "Game")
-			{
-				tText = "Game";
-			}
+			turnCount ++;
 
 			// On actualise le View
 			GameEvent.Text = sText;
