@@ -18,7 +18,7 @@ namespace Wolfpack
 		public const string WHO_DOUBLE = "Double";
 
 		// Nombre de challenge dans une partie
-		public const int GAME_LENGTH = 3;
+		public const int GAME_LENGTH = 40;
 	}
 }
 
