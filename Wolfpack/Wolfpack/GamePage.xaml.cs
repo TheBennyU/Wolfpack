@@ -60,7 +60,8 @@ namespace Wolfpack
 			else
 			{
 				GameEvent.Text = "Partie terminée !";
-				btnNewGame.IsVisible = true;
+				cvNewGame.IsVisible = true;
+				slChallenge.BackgroundColor = Color.FromHex("2D3047");
 			}
 		}
 
@@ -71,7 +72,7 @@ namespace Wolfpack
 		/// <param name="e">E.</param>
 		void btnNewGame_Clicked(object sender, EventArgs e)
 		{
-			 btnNewGame.IsVisible = false;
+			 cvNewGame.IsVisible = false;
 			 //StartGame();
 			Navigation.PushModalAsync(new AddPlayersPage(players));
 
