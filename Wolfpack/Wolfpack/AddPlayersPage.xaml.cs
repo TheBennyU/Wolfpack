@@ -55,10 +55,13 @@ namespace Wolfpack
 		void Delete_Clicked(object sender, System.EventArgs e)
 		{
 			var item = (Xamarin.Forms.Button)sender;
-			Player listitem = (from itm in players
-							   where itm.DisplayName == item.CommandParameter.ToString()
-							   select itm).FirstOrDefault<Player>();
-			players.Remove(listitem);
+			if (item != null)
+			{
+				Player listitem = (from itm in players
+								   where itm.DisplayName == item.CommandParameter.ToString()
+								   select itm).FirstOrDefault<Player>();
+				players.Remove(listitem);
+			}
 		}
 
 		void btnStart_Clicked(object sender, System.EventArgs e)
