@@ -66,7 +66,9 @@ namespace Wolfpack
 
 		void btnStart_Clicked(object sender, System.EventArgs e)
 		{
-			Navigation.PushModalAsync(new GamePage(players));
+			// Il faut au moins être trois pour jouer
+			if(players.Count > 2)
+				Navigation.PushModalAsync(new GamePage(players));
 		}
 	}
 }
