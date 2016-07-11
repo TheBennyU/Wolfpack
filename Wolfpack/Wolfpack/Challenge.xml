@@ -480,7 +480,7 @@
 	<Challenge>
 		<type>Rule</type>
 		<textDescription>{0} doit rire a chaque fois qu'un joueur boit</textDescription>
-		<who>All</who>
+		<who>Solo</who>
 		<cancel>
 			<time>4</time>
 			<text>{0} peut arreter de rire a chaque fois qu'un joueur boit</text>
@@ -679,6 +679,319 @@
 		<type>Game</type>
 		<textDescription>{0}, donne une gorgée à un joueur. Cette personne donne 2 à un autre joueur et ainsi de suite. Le jeu fini quand quelqu'un te donne des gorgées</textDescription>
 		<who>Solo</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<!-- Challenge de IS -->
+	<Challenge>
+		<type>Game</type>
+		<textDescription>{0} et {1} sont meilleurs amis, quand un bois 
+		l'autre doit boire aussi, quand l'un donne des gorgés, l'autre en donne autant</textDescription>
+		<who>Double</who>
+		<cancel>
+			<time>5</time>
+			<text>{0} et {1} ne sont plus meilleurs amis</text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>{0} fait autant de pushup que {1}. 
+		Si tu y parviens, donne 5 gorgés sinon bois 5</textDescription>
+		<who>Double</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>{0} est un peu gay et n'a pas vraiment soif, 
+		il boit une gorgé. Celui a sa droite en boit 2, celui a sa droite 3, et ainsi de suite.</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>Nom de fille qui commence par "S", celui qui se trompre ou repete boit 5 gorgés, 
+		{0} commence.</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>{0} et {1} convertissez 21 celcius en faranieght. 
+		Si c'est exact donnez 5 gorgés chaque sinon une gorgé par degrés en surplus ou manquant, 
+		vous pouvez vous les séparer. (69.8 F)</textDescription>
+		<who>Double</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>Tout monde doit maintenant finir ses phrases par "sauf" jusqu'à nouvel ordre, 
+		2 gorgés par manqués</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>3</time>
+			<text>Vous pouvez arrêter de finir vos phrases par sauf, sauf.</text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>Tous les joueurs doivent complimenter {0} avant de boire jusqu'à nouvel ordre, 
+		2 gorgés par manque</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>3</time>
+			<text>Vous pouvez arrêter de complimenter {0}.</text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>Mots qui rime en "us" , celui qui se trompe ou repete boit 5 gorgés, {0} commence</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>Tout le monde boit en gorgé le nombre d'année qu'ils ont passé à l'école après le secondaire</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>{0} doit répeter apres {1} jusqu'à nouvel ordre, 2 gorgés par manque</textDescription>
+		<who>Double</who>
+		<cancel>
+			<time>2</time>
+			<text>{0} peut arrêter de répeter après {1}. {0} peut arrêter de répeter après {1}.</text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>{0} à le regard qui tue, chaque personne qui le regarde dans les yeux doit boire 3 gorgés, 
+		ou s'il finit son verre il devient le regard qui tue</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>5</time>
+			<text>{0} n'a plus le regarde qui tue.</text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>Tout le monde finit sa bière sauf {0} et {1}.</textDescription>
+		<who>Double</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>Celui qui a les ongles de de doigts les plus long boit 5 gorgés</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>Le dernier a être aller au toilette boit 3 gorgés</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>{0} fait un bras de fer avec {1}, le perdant bois 3 gorgés</textDescription>
+		<who>Double</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>{0} échange ton verre avec {1} jusqu'a nouvel ordre</textDescription>
+		<who>Double</who>
+		<cancel>
+			<time>5</time>
+			<text>{0} et {1} récupèrent leur verre.</text>
+		</cancel>
+	</Challenge>
+	<!-- Challenge de MAtthiew -->
+	<Challenge>
+		<type>Game</type>
+		<textDescription>Nommez des noms de boutique érotique. Lui qui n'en trouve pas ou qui repete boit 3 gorgés. {0} commence.</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>Nommez des noms de joueurs des canadiens de Montréal. Lui qui n'en trouve pas ou qui repete boit 3 gorgés. {0} commence.</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>Nommez des noms des personnages de Nintendo. Lui qui n'en trouve pas ou qui repete boit 3 gorgés. {0} commence.</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>Nommez en ordre les 151 premiers pokémons. Lui qui n'en trouve pas ou qui repete boit 3 gorgés. {0} commence.
+		Si vous vous rendez a 151 tout le monde fini son verre !</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>Chaque fois que {0} est debout, il doit gambader.</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>10</time>
+			<text>{0} peut arrêter de gambader</text>
+		</cancel>
+	</Challenge>
+	<!-- Challenge de Ben -->
+	<Challenge>
+		<type>Game</type>
+		<textDescription>{0} va remplir une cuillère avec le condiment de son choix. {1} doit l'avaler ou finir son verre.</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>Nommez des animes. Lui qui n'en trouve pas ou qui repete boit 3 gorgés. {0} commence.</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>{0} doit toujours savoir l'heure.</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>5</time>
+			<text>Lire la suite dans ta tête. Demande l'heure a {0}, il ne peut pas regarder l'heure. 
+			Si il regarde l'heure, il boit 5 gorgés. Si il se trompe, il boit 3 gorgés. 
+			Si il a raison les autres boivent 5 gorgés.</text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>{0} est tellement serviable qu'il va s'occuper de servir un comoditer
+		a chaque fois que quelqu'un fini son verre.</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>10</time>
+			<text>{0} désigne un nouveau serveur pour le reste de la partie</text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>{0} doit rester debout jusqu'a nouvelle ordre</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>6</time>
+			<text>{0} peut se rassir</text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>{0} doit cracher dans son verre ou le finir</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>{0} échange le verre de deux personnes</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>{0} doit tourner le dos a tout le monde jusqu'a nouvel ordre</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>5</time>
+			<text>{0} peut se retourner</text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>{0} et {1} jouent a "Je te tiens par la barbichette". Le perdant en boit 3 !</textDescription>
+		<who>Double</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription> Tout le monde doit boire de la main gauche ! Chaque fois que quelqu'un se trompe c'est 1 gorgé.</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>5</time>
+			<text>On peut recommencer a boire avec la main qu'on veut</text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>Les personnes a droite de chaque gaucher boivent 3 gorgés</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>Ni oui, ni non.. Jusqu'a ce que quelqu'un se trompe. Cette personne boit 5 gorgés.</textDescription>
+		<who>All</who>
 		<cancel>
 			<time>0</time>
 			<text></text>
