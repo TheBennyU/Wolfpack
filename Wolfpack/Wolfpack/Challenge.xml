@@ -840,7 +840,7 @@
 	</Challenge>
 	<!-- Challenge de MAtthiew -->
 	<Challenge>
-		<type>Game</type>
+		<type>NameIt</type>
 		<textDescription>Nommez des noms de boutique érotique. Lui qui n'en trouve pas ou qui repete boit 3 gorgés. {0} commence.</textDescription>
 		<who>Solo</who>
 		<cancel>
@@ -849,7 +849,7 @@
 		</cancel>
 	</Challenge>
 	<Challenge>
-		<type>Game</type>
+		<type>NameIt</type>
 		<textDescription>Nommez des noms de joueurs des canadiens de Montréal. Lui qui n'en trouve pas ou qui repete boit 3 gorgés. {0} commence.</textDescription>
 		<who>Solo</who>
 		<cancel>
@@ -858,7 +858,7 @@
 		</cancel>
 	</Challenge>
 	<Challenge>
-		<type>Game</type>
+		<type>NameIt</type>
 		<textDescription>Nommez des noms des personnages de Nintendo. Lui qui n'en trouve pas ou qui repete boit 3 gorgés. {0} commence.</textDescription>
 		<who>Solo</who>
 		<cancel>
@@ -867,7 +867,7 @@
 		</cancel>
 	</Challenge>
 	<Challenge>
-		<type>Game</type>
+		<type>NameIt</type>
 		<textDescription>Nommez en ordre les 151 premiers pokémons. Lui qui n'en trouve pas ou qui repete boit 3 gorgés. {0} commence.
 		Si vous vous rendez a 151 tout le monde fini son verre !</textDescription>
 		<who>Solo</who>
@@ -896,7 +896,7 @@
 		</cancel>
 	</Challenge>
 	<Challenge>
-		<type>Game</type>
+		<type>NameIt</type>
 		<textDescription>Nommez des animes. Lui qui n'en trouve pas ou qui repete boit 3 gorgés. {0} commence.</textDescription>
 		<who>Solo</who>
 		<cancel>

@@ -9,6 +9,7 @@ namespace Wolfpack
 		public const string TYPE_CONSEQUENCE = "Consequence";
 		public const string TYPE_GAME = "Game";
 		public const string TYPE_RULE = "Rule";
+		public const string TYPE_NAMEIT = "NameIt";
 
 		// Les valeurs possibles de "who"
 		public const string WHO_ALL = "All";

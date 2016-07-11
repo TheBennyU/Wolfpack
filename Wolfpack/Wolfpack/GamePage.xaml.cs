@@ -188,6 +188,10 @@ namespace Wolfpack
 					cText = Color.White;
 					cBackground = Color.FromHex("E84855");
 					break;
+				case Constantes.TYPE_NAMEIT:
+					cText = Color.White;
+					cBackground = Color.FromHex("7ED77B"); // Vert
+					break;
 				default:
 					cText = Color.Lime;
 					cBackground = Color.White;
