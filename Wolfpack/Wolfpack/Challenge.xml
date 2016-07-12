@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <ChallengeList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<Challenge>
-		<type>Consequence</type> <!-- Exemple: Game/Rule/Consequence  -->
+		<type>Consequence</type> <!-- Exemple: Game/Rule/Consequence/NameIt  -->
 		<textDescription>Tout le monde boit 3 gorgées</textDescription>
 		<who>All</who>  <!-- Exemple: Solo/All/Boys/Girls/Double -->
 		<cancel>
@@ -32,7 +32,7 @@
 		<textDescription>{0} doit garder un doigt dans son nez</textDescription>
 		<who>Solo</who>
 		<cancel>
-			<time>3</time>
+			<time>5</time>
 			<text>{0} peut enfin enlever les doigts de son nez</text>
 		</cancel>
 	</Challenge>
@@ -154,6 +154,15 @@
 		</cancel>
 	</Challenge>
 	<Challenge>
+		<type>Consequence</type>
+		<textDescription>La personne avec le verre le moins rempli doit le caller maintenant</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
 		<type>Game</type>
 		<textDescription>Decidez qui est le plus wolf dans la pièce, il doit boire 4</textDescription>
 		<who>All</who>
@@ -163,8 +172,8 @@
 		</cancel>
 	</Challenge>
 	<Challenge>
-		<type>Game</type>
-		<textDescription>À tour de rôle, les joueurs doivent nommer une marque d'automobiles. {0} débute</textDescription>
+		<type>NameIt</type>
+		<textDescription>À tour de rôle, les joueurs doivent nommer une marque d'automobile. {0} débute</textDescription>
 		<who>Solo</who>
 		<cancel>
 			<time>0</time>
@@ -173,7 +182,7 @@
 	</Challenge>
 	<Challenge>
 		<type>Game</type>
-		<textDescription>À tour de rôle, les joueurs doivent nommer une marque de bières. {0} débute</textDescription>
+		<textDescription>À tour de rôle, les joueurs doivent nommer une marque de bière. {0} débute</textDescription>
 		<who>Solo</who>
 		<cancel>
 			<time>0</time>
@@ -182,10 +191,10 @@
 	</Challenge>
 	<Challenge>
 		<type>Rule</type>
-		<textDescription>Nouvelle règle! Comme Yoda, vous devez parler.</textDescription>
+		<textDescription>Nouvelle règle! Comme Yoda, vous devez parler. Si le faire, tu ne fais pas. 2 gorgés, tu dois boire.</textDescription>
 		<who>All</who>
 		<cancel>
-			<time>5</time>
+			<time>6</time>
 			<text>Vous pouvez arrêter de parler comme Yoda!</text>
 		</cancel>
 	</Challenge>
@@ -200,7 +209,16 @@
 	</Challenge>
 	<Challenge>
 		<type>Consequence</type>
-		<textDescription>Si tu mesures plus de 6 pieds, donne 4</textDescription>
+		<textDescription>Si tu mesures plus de 6 pieds, donne 3</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Si tu mesures moins de 6 pieds, donne 3</textDescription>
 		<who>All</who>
 		<cancel>
 			<time>0</time>
@@ -245,7 +263,7 @@
 	</Challenge>
 	<Challenge>
 		<type>Consequence</type>
-		<textDescription>Gerry boit 5</textDescription>
+		<textDescription>Le plus jeune joueur doit boire 3</textDescription>
 		<who>All</who>
 		<cancel>
 			<time>0</time>
@@ -254,7 +272,7 @@
 	</Challenge>
 	<Challenge>
 		<type>Consequence</type>
-		<textDescription>Le plus jeune joueur doit boire 3</textDescription>
+		<textDescription>Le plus vieux joueur doit boire 3</textDescription>
 		<who>All</who>
 		<cancel>
 			<time>0</time>
@@ -273,6 +291,15 @@
 	<Challenge>
 		<type>Consequence</type>
 		<textDescription>Si ta fête est une date paire, bois 3</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Si ta fête est une date impaire, bois 3</textDescription>
 		<who>All</who>
 		<cancel>
 			<time>0</time>
@@ -344,7 +371,7 @@
 	</Challenge>
 	<Challenge>
 		<type>Game</type>
-		<textDescription>{0} choisi un mot. En faisant le tour de table, tout le monde doit dire un mot qui rhyme avec ce mot. Le perdant bois 2</textDescription>
+		<textDescription>{0} choisi un mot. En faisant le tour de table, tout le monde doit dire un mot qui rhyme avec ce mot. Le perdant bois 4</textDescription>
 		<who>Solo</who>
 		<cancel>
 			<time>0</time>
@@ -371,7 +398,7 @@
 	</Challenge>
 	<Challenge>
 		<type>Consequence</type>
-		<textDescription>Tout le monde bois 5 gorgées dans la consommation de son voisin de droites</textDescription>
+		<textDescription>Tout le monde bois 5 gorgées dans la consommation de son voisin de droite</textDescription>
 		<who>All</who>
 		<cancel>
 			<time>0</time>
@@ -389,7 +416,7 @@
 	</Challenge>
 	<Challenge>
 		<type>Rule</type>
-		<textDescription>Personne n'a le droit de s'adresser a son voisin de gauche</textDescription>
+		<textDescription>Personne n'a le droit de s'adresser a son voisin de gauche. Conséquence 2 gorgés</textDescription>
 		<who>All</who>
 		<cancel>
 			<time>6</time>
@@ -488,7 +515,7 @@
 	</Challenge>
 	<Challenge>
 		<type>Rule</type>
-		<textDescription>{0} n'a pas le droit de toucher le sol</textDescription>
+		<textDescription>{0} n'a pas le droit de toucher le sol. S'il échoue, il boit 5 gorgés et la personne qui le dénonce en donne 2.</textDescription>
 		<who>Solo</who>
 		<cancel>
 			<time>10</time>
@@ -497,16 +524,16 @@
 	</Challenge>
 	<Challenge>
 		<type>Rule</type>
-		<textDescription>Les joueurs doivent élire un president. Celui-ci doit se faire appeler Mr. President a partir de maintenant</textDescription>
+		<textDescription>Les joueurs doivent élire un president. Celui-ci doit se faire appeler Mr. President a partir de maintenant. 1 gorgé a chaque fautif.</textDescription>
 		<who>Solo</who>
 		<cancel>
-			<time>0</time>
-			<text></text>
+			<time>12</time>
+			<text>Mr. President a fini son mandat.</text>
 		</cancel>
 	</Challenge>
 	<Challenge>
 		<type>Consequence</type>
-		<textDescription>Le dernier joueur a avoir bu doit boire une autre gorgee</textDescription>
+		<textDescription>Le dernier joueur a avoir bu doit boire une autre gorgée</textDescription>
 		<who>All</who>
 		<cancel>
 			<time>0</time>
@@ -519,12 +546,12 @@
 		<who>Solo</who>
 		<cancel>
 			<time>4</time>
-			<text>{0} c'est beau on a compris criss</text>
+			<text>{0} c'est beau on a compris criss, t'es pas tant sexy..</text>
 		</cancel>
 	</Challenge>
 	<Challenge>
 		<type>Game</type>
-		<textDescription>{0} es le leader. Tout le monde commence à boire en même temps et la personne à sa gauche ne peut pas arrêter de boire tant qu'il n'a pas arrêté et ainsi de suite</textDescription>
+		<textDescription>{0} est le leader. Tout le monde commence à boire en même temps et la personne à sa gauche ne peut pas arrêter de boire tant qu'il n'a pas arrêté et ainsi de suite</textDescription>
 		<who>Solo</who>
 		<cancel>
 			<time>0</time>
@@ -533,7 +560,7 @@
 	</Challenge>
 	<Challenge>
 		<type>Consequence</type>
-		<textDescription>Tout le monde avec fini à moité sauf {0} doit finir sa consommation</textDescription>
+		<textDescription>Tout le monde doit se rendre a la moitier de sa consommation sauf {0} doit finir sa consommation</textDescription>
 		<who>Solo</who>
 		<cancel>
 			<time>0</time>
@@ -542,7 +569,7 @@
 	</Challenge>
 	<Challenge>
 		<type>Rule</type>
-		<textDescription>{0}, choisis quelqu'un qui doit boire de l'autre main jusqu'à la fin de la partie. Il doit boire 3 gorgée chaque fois qu'il se trompe</textDescription>
+		<textDescription>{0}, choisis quelqu'un qui doit boire de l'autre main jusqu'à la fin de la partie. Il doit boire 2 gorgée chaque fois qu'il se trompe</textDescription>
 		<who>Solo</who>
 		<cancel>
 			<time>0</time>
@@ -551,7 +578,7 @@
 	</Challenge>
 	<Challenge>
 		<type>Rule</type>
-		<textDescription>{0}, boit une gorgÈ pour chaque mot que tu dis</textDescription>
+		<textDescription>{0}, boit une gorgé pour chaque mot que tu dis</textDescription>
 		<who>Solo</who>
 		<cancel>
 			<time>5</time>
@@ -573,7 +600,7 @@
 		<who>Solo</who>
 		<cancel>
 			<time>10</time>
-			<text>{0}, arrête de boire quand donne une gorgée</text>
+			<text>{0}, arrête de boire quand tu donnes une gorgée</text>
 		</cancel>
 	</Challenge>
 	<Challenge>
@@ -691,7 +718,7 @@
 		l'autre doit boire aussi, quand l'un donne des gorgés, l'autre en donne autant</textDescription>
 		<who>Double</who>
 		<cancel>
-			<time>5</time>
+			<time>8</time>
 			<text>{0} et {1} ne sont plus meilleurs amis</text>
 		</cancel>
 	</Challenge>
@@ -729,7 +756,7 @@
 		<type>Game</type>
 		<textDescription>{0} et {1} convertissez 21 celcius en faranieght. 
 		Si c'est exact donnez 5 gorgés chaque sinon une gorgé par degrés en surplus ou manquant, 
-		vous pouvez vous les séparer. (69.8 F)</textDescription>
+		vous pouvez vous les séparer. (70 F)</textDescription>
 		<who>Double</who>
 		<cancel>
 			<time>0</time>
@@ -742,7 +769,7 @@
 		2 gorgés par manqués</textDescription>
 		<who>All</who>
 		<cancel>
-			<time>3</time>
+			<time>6</time>
 			<text>Vous pouvez arrêter de finir vos phrases par sauf, sauf.</text>
 		</cancel>
 	</Challenge>
@@ -752,7 +779,7 @@
 		2 gorgés par manque</textDescription>
 		<who>Solo</who>
 		<cancel>
-			<time>3</time>
+			<time>4</time>
 			<text>Vous pouvez arrêter de complimenter {0}.</text>
 		</cancel>
 	</Challenge>
@@ -779,7 +806,7 @@
 		<textDescription>{0} doit répeter apres {1} jusqu'à nouvel ordre, 2 gorgés par manque</textDescription>
 		<who>Double</who>
 		<cancel>
-			<time>2</time>
+			<time>3</time>
 			<text>{0} peut arrêter de répeter après {1}. {0} peut arrêter de répeter après {1}.</text>
 		</cancel>
 	</Challenge>
@@ -850,7 +877,7 @@
 	</Challenge>
 	<Challenge>
 		<type>NameIt</type>
-		<textDescription>Nommez des noms de joueurs des canadiens de Montréal. Lui qui n'en trouve pas ou qui repete boit 3 gorgés. {0} commence.</textDescription>
+		<textDescription>Nommez des noms de joueurs des canadiens de Montréal actuel. Lui qui n'en trouve pas ou qui repete boit 3 gorgés. {0} commence.</textDescription>
 		<who>Solo</who>
 		<cancel>
 			<time>0</time>
@@ -868,7 +895,7 @@
 	</Challenge>
 	<Challenge>
 		<type>NameIt</type>
-		<textDescription>Nommez en ordre les 151 premiers pokémons. Lui qui n'en trouve pas ou qui repete boit 3 gorgés. {0} commence.
+		<textDescription>Nommez en ordre les 151 premiers pokémons. Lui qui n'en trouve pas boit 3 gorgés. {0} commence.
 		Si vous vous rendez a 151 tout le monde fini son verre !</textDescription>
 		<who>Solo</who>
 		<cancel>
@@ -897,7 +924,7 @@
 	</Challenge>
 	<Challenge>
 		<type>NameIt</type>
-		<textDescription>Nommez des animes. Lui qui n'en trouve pas ou qui repete boit 3 gorgés. {0} commence.</textDescription>
+		<textDescription>Nommez des pornstars. Lui qui n'en trouve pas ou qui repete boit 3 gorgés. {0} commence.</textDescription>
 		<who>Solo</who>
 		<cancel>
 			<time>0</time>
@@ -911,8 +938,8 @@
 		<cancel>
 			<time>5</time>
 			<text>Lire la suite dans ta tête. Demande l'heure a {0}, il ne peut pas regarder l'heure. 
-			Si il regarde l'heure, il boit 5 gorgés. Si il se trompe, il boit 3 gorgés. 
-			Si il a raison les autres boivent 5 gorgés.</text>
+			S'il regarde l'heure, il boit 5 gorgés. S'il se trompe, il boit 3 gorgés. 
+			S'il a raison les autres boivent 5 gorgés.</text>
 		</cancel>
 	</Challenge>
 	<Challenge>
@@ -921,7 +948,7 @@
 		a chaque fois que quelqu'un fini son verre.</textDescription>
 		<who>Solo</who>
 		<cancel>
-			<time>10</time>
+			<time>12</time>
 			<text>{0} désigne un nouveau serveur pour le reste de la partie</text>
 		</cancel>
 	</Challenge>
@@ -937,10 +964,10 @@
 	<Challenge>
 		<type>Game</type>
 		<textDescription>{0} doit cracher dans son verre ou le finir</textDescription>
-		<who>Solo</who>
+		<who>Double</who>
 		<cancel>
-			<time>0</time>
-			<text></text>
+			<time>1</time>
+			<text>{1} échange les verres de deux personnes de son choix.</text>
 		</cancel>
 	</Challenge>
 	<Challenge>
@@ -991,6 +1018,15 @@
 	<Challenge>
 		<type>Game</type>
 		<textDescription>Ni oui, ni non.. Jusqu'a ce que quelqu'un se trompe. Cette personne boit 5 gorgés.</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>Le prochain challenge est x4 pour les gorgés</textDescription>
 		<who>All</who>
 		<cancel>
 			<time>0</time>
