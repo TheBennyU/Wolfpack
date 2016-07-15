@@ -1033,4 +1033,139 @@
 			<text></text>
 		</cancel>
 	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>{0} et {1} boivent leur différence d'age</textDescription>
+		<who>Double</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Si tu as téléchargé Pokémon Go boit deux pokégorgés</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Si tu es level 18 ou plus dans Pokémon Go donne 15 gorgés</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Si tu es level 18 ou plus dans Pokémon Go donne 15 gorgés</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Le plus intelligent distribue 5 gorgés</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Le meilleur joueur au Dek distribue 5 gorgés</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Le plus gros boit 5 gorgés</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Pointez la personne qui doit boire 5 gorgés</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Le prochain a partir du chalet boit 10 gorgés</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Le dernier arrivé au chalet boit 10 gorgés</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Les premiers arrivés au chalet boivent 10 gorgés</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Ceux qui ont une Mazda boivent 5 gorgés</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>1</time>
+			<text>Ceux qui ont une voiture grise boivent 2 gorgés</text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Ceux qui boivent de la Molson donnent 2 gorgés</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Consequence</type>
+		<textDescription>Le dernier a lever la main boit 2 gorgés</textDescription>
+		<who>All</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
+	<Challenge>
+		<type>Game</type>
+		<textDescription>{0} peut roter quand il veut, la prochaine fois qu'il rote tout le monde doit lever la main, le dernier boit 5 gorgés</textDescription>
+		<who>Solo</who>
+		<cancel>
+			<time>0</time>
+			<text></text>
+		</cancel>
+	</Challenge>
 </ChallengeList>
